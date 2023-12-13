@@ -102,11 +102,29 @@ body{
 
 /* Menu End*/
 
+/* Ads*/
+
+.ads{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-ads{
+    width: 1100px;
+    height: 250px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Ads END*/
+
+/* Container Content */
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .container-content{
@@ -177,4 +195,12 @@ body{
     padding: 20px;
     left: 0;
     bottom: 0;
+}
+/* Container Content - End*/
+
+.footer{
+    background: #0984e3;
+    height: 200px;
+    border-top: 4px solid #006fc4;
+    margin-top: 30px;
 }

@@ -102,11 +102,30 @@ body{
 
 /* Menu End*/
 
+/* Publicidade */
+
+.publi-container{
+    display: flex;
+    justify-content: center;
+}
+
+.publi-material{
+    width: 1100px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.publi-material:hover{
+    transform: scale(1.02);
+}
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    0px;
 }
 
 .container-content{
@@ -117,7 +136,7 @@ body{
     display: flex;
     align-items: center;
     gap: 7px;
-    margin: 12px;
+    margin: 10px;
 }
 
 .card-item{

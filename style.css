@@ -18,6 +18,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.4s ease-in-out;
 }
 
 .header-content{
@@ -30,6 +31,7 @@ body{
     width: 150px;
     height: 150px;
     object-fit: scale-down;
+    transition: all 0.4s ease-in-out;
 }
 
 .search {
@@ -41,13 +43,14 @@ body{
     border-radius: 5px;
     margin-left: 30px;
     gap: 10px;
+    transition: all 0.8s ease-in-out;
 }
 
 .search i{
     color: #b2bec3;
     cursor: pointer;
     margin-left: 10px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 
 .search i:hover{
@@ -65,8 +68,12 @@ body{
 .login{
     display: flex;
     align-items: center;
-    margin-left: 15px;
-    gap: 10px;
+    margin-left: 10px;
+}
+
+.menu-mobile{
+    display: none;
+    transition: all 0.4s ease-in-out;
 }
 
 .login i{
@@ -257,5 +264,45 @@ body{
 }
 
 @media (width < 810px){
+    .menu{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: flex;
+
+    }
+}
+
+@media (width < 600px){
+    .logo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .search input{
+        width: 170px;
+    }
+}
+
+@media (width < 430px){
+    .header{
+        height: 70px;
+    }
+
+    .ads{
+        display: none;
+    }
+
+    .search{
+        background: transparent;
+    }
+
+    .search i{
+        color: #fff
+    }
     
+    .search input{
+        width: 0;
+    }
 }

@@ -82,6 +82,13 @@ body{
     background: #0984e3;
     border-bottom: 3px solid #006fc4;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-nav{
+    width: 1100px;
 }
 
 .menu ul{
@@ -89,12 +96,19 @@ body{
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    gap: 15px;
 }
 
 .menu li{
+    display: flex;
+    align-items: center;
     padding: 10px;
     font-size: 14px;
+    gap:5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu li span{
+    transition: all 0.4s ease-in-out;
 }
 
 .menu li:hover{
@@ -240,4 +254,8 @@ body{
     .search input{
         width: 250px;
     }
+}
+
+@media (width < 810px){
+    
 }
